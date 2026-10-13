@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Manuscripts Auction Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="signup">
+    <main class="auth-page">
+      <div class="auth-card">
+        <div class="auth-header">
+          <a href="index.html" class="logo" aria-label="Back to homepage">
+            <span class="logo-mark">M</span>
+            <span>Manuscripts Auction Store</span>
+          </a>
+          <h1>Create your account</h1>
+          <p>Join a marketplace for collectors, sellers, and bibliophiles.</p>
+        </div>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="signup-name">Full name</label>
+            <input id="signup-name" name="fullName" type="text" placeholder="Your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="signup-email">Email address</label>
+            <input id="signup-email" name="email" type="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <div class="password-wrapper">
+              <input id="signup-password" name="password" type="password" placeholder="Create a password" />
+              <button type="button" class="toggle-password" data-target="signup-password">Show</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-confirm-password">Confirm password</label>
+            <div class="password-wrapper">
+              <input id="signup-confirm-password" name="confirmPassword" type="password" placeholder="Confirm your password" />
+              <button type="button" class="toggle-password" data-target="signup-confirm-password">Show</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="user-type">User type</label>
+            <select id="user-type" name="userType">
+              <option value="">Select an option</option>
+              <option value="Buyer">Buyer</option>
+              <option value="Seller">Seller</option>
+            </select>
+          </div>
+
+          <button type="submit" class="primary-btn auth-btn">Sign Up</button>
+
+          <p class="auth-switch">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+
+          <p class="back-link">
+            <a href="index.html">Return to homepage</a>
+          </p>
+
+          <p id="signup-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
